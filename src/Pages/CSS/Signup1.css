@@ -1,0 +1,144 @@
+/* Full-page container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Signup box with two columns */
+.signup-box {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Each column (left & right) */
+.signup-column {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Titles */
+.signup-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Subtitle */
+.signup-subtitle {
+  font-size: 0.9rem;
+  color: gray;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form styling */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.signup-form label {
+  text-align: left;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Input fields */
+.signup-form input {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Password fields side by side */
+.password-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.password-group input {
+  width: 48%;
+}
+
+/* Signup button */
+.signup-btn {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.signup-btn:hover {
+  background: darkorange;
+}
+
+/* Social media section */
+.social-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icon {
+  background: gray;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* Specific colors for icons */
+.facebook {
+  background: #3b5998;
+}
+
+.twitter {
+  background: #1da1f2;
+}
+
+.google {
+  background: #db4437;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-box {
+    flex-direction: column;
+  }
+
+  .signup-column {
+    width: 100%;
+  }
+}
